@@ -29,8 +29,7 @@ def download_file(url, output_path):
         # Create parent dir if needed for nested files
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         
-        # verify=False bypasses the SSL error
-        response = requests.get(url, stream=True, verify=False)
+        response = requests.get(url, stream=True)
         response.raise_for_status()
         
         total_size = int(response.headers.get('content-length', 0))
@@ -84,7 +83,4 @@ def main():
     print("\nDownload setup complete. Now you can run rag_pipeline.py")
 
 if __name__ == "__main__":
-    # Disable warnings for unverified HTTPS requests
-    import urllib3
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     main()
