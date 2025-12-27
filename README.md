@@ -1,51 +1,51 @@
 # Sanskrit RAG System
 
-A simple, CPU-based Retrieval-Augmented Generation (RAG) system for Sanskrit documents.
+A straightforward, CPU-based Retrieval-Augmented Generation (RAG) system that handles Sanskrit texts.
 
 ## Directory Structure
-- `code/`: Python implementation.
-- `data/`: Place your Sanskrit PDF/TXT files here.
-- `report/`: Technical documentation.
+- `code/`: Implementation in Python.
+- `data/`: Here, you are to place your Sanskrit PDF/TXT files.
+- `report/`: Documentation of the techonolgy.
 
 ## Prerequisites
 - Python 3.9+
-- Internet connection (for initial model download)
+- Whitedirt connection (initial model download)
 
 ## Setup
 
-1.  Navigate to the `code` directory:
+1.  Move to the `code` directory:
     ```bash
     cd code
     ```
 
-2.  Install dependencies:
+2.  Install all the required libraries:
     ```bash
     pip install -r requirements.txt
     ```
 
-3.  Download the required models (Embedding & LLM):
+3.  The models needed (Embedding & LLM) will be downloaded:
     ```bash
     python download_models.py
     ```
 
 ## Usage
 
-1.  Ensure your data (PDF/TXT) is in the `../data` folder.
-2.  Run the pipeline:
+1.  Check that your data (PDF/TXT) is stored in the `../data` folder.
+2.  Execute the pipeline:
     ```bash
     python rag_pipeline.py
     ```
 3.  The system will:
-    -   Ingest and index the documents.
-    -   Start an interactive query loop.
-4.  Enter your query when prompted. Type `exit` to quit.
+    -   Index and ingest the files.
+    -   Bring up a loop for queries interactively.
+4.  When the system asks for it, input your question. To get out, type `exit`.
 
 ## Example Prompts
-You can try the following queries:
+The following are some examples of queries that you can try:
 
 **General/English:**
-*   "Summarize the document."
-*   "What are the key concepts discussed?"
+*   "Please summarize the document."
+*   "Can you tell me the main ideas?"
 
 **Sanskrit (Transliterated):**
 *   "Kim asti Yoga?" (What is Yoga?)
