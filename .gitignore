@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+env/
+
+# RAG System specific
+local_llm/
+local_embedding_model/
+db_storage/
+
+# OS specific
+.DS_Store
+Thumbs.db

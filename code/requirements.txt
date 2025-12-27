@@ -1,0 +1,7 @@
+gpt4all==2.0.2
+chromadb==0.4.15
+sentence-transformers>=3.0.0
+pypdf==3.17.1
+tf-keras
+tqdm
+
